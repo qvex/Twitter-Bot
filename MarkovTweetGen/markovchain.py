@@ -16,11 +16,6 @@ class Markov(object):
         return words
 
     def triples(self):
-        """ Generates triples from the given data string. So if our string were
-                "What a lovely day", we'd generate (What, a, lovely) and then
-                (a, lovely, day).
-        """
-
         if len(self.words) < 3:
             return
 
